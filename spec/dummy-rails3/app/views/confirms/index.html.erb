@@ -1,0 +1,3 @@
+<%= link_to 'Basic confirm', get_cow_path, id: 'basic-confirm', data: { text: 'nanana', confirm: 'Are you sure?' } %>
+<%= link_to 'Delete confirm', delete_cow_path,method: :delete, id: 'method-confirm', data: { text: 'nanana', confirm: 'Are you sure?' } %>
+<%= link_to 'Remote confirm', delete_cow_path,method: :delete, id: 'remote-confirm', data: { remote: 'true', text: 'nanana', confirm: 'Are you sure?' } %>

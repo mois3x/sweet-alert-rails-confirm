@@ -1,0 +1,170 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:25 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 14.2ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-10-13 18:25:25 -0430
+Warning. Error encountered while saving cache /Users/moises/proyectos/gems/sweet_rails_confirm/spec/dummy-rails3/tmp/cache/sass/bd708edc765b11d933154b88e166294c3e98cb7a/sweet-alert.scssc: can't dump anonymous class #<Class:0x007fb72e0e8840>
+
+Compiled sweet-alert/sweet-alert.css  (109ms)  (pid 3130)
+Compiled sweet-alert/index.css  (114ms)  (pid 3130)
+Compiled application.scss.css  (2ms)  (pid 3130)
+Compiled application.css  (132ms)  (pid 3130)
+Served asset /application.css - 200 OK (138ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-10-13 18:25:25 -0430
+Compiled jquery.js  (6ms)  (pid 3130)
+Compiled jquery_ujs.js  (1ms)  (pid 3130)
+Compiled sweet-alert/sweet-alert.js  (1ms)  (pid 3130)
+Compiled sweet-alert/sweet-alert.min.js  (0ms)  (pid 3130)
+Compiled sweet-alert/index.js  (12ms)  (pid 3130)
+Compiled sweet-alert-confirm.js  (2ms)  (pid 3130)
+Compiled application.js  (48ms)  (pid 3130)
+Served asset /application.js - 200 OK (56ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:25 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1.8ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+Started DELETE "/delete_cow" for 127.0.0.1 at 2014-10-13 18:25:26 -0430
+Processing by ConfirmsController#delete_cow as JS
+  Rendered confirms/delete_cow.js.erb (0.5ms)
+Completed 200 OK in 10.7ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:27 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1.7ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:27 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1.8ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+Started GET "/get_cow" for 127.0.0.1 at 2014-10-13 18:25:28 -0430
+Processing by ConfirmsController#get_cow as HTML
+  Rendered confirms/get_cow.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2.8ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:28 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1.9ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:28 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1.9ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started DELETE "/delete_cow" for 127.0.0.1 at 2014-10-13 18:25:29 -0430
+Processing by ConfirmsController#delete_cow as HTML
+  Rendered confirms/delete_cow.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3.2ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:29 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2.1ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:29 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2.0ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+Started DELETE "/delete_cow" for 127.0.0.1 at 2014-10-13 18:25:31 -0430
+Processing by ConfirmsController#delete_cow as JS
+  Rendered confirms/delete_cow.js.erb (0.0ms)
+Completed 200 OK in 0.6ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:31 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1.8ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:31 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3.3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+Started GET "/get_cow" for 127.0.0.1 at 2014-10-13 18:25:32 -0430
+Processing by ConfirmsController#get_cow as HTML
+  Rendered confirms/get_cow.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1.3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:32 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2.0ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:32 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2.1ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Started DELETE "/delete_cow" for 127.0.0.1 at 2014-10-13 18:25:33 -0430
+Processing by ConfirmsController#delete_cow as HTML
+  Rendered confirms/delete_cow.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1.3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:33 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 9.1ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:33 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1.9ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started DELETE "/delete_cow" for 127.0.0.1 at 2014-10-13 18:25:35 -0430
+Processing by ConfirmsController#delete_cow as JS
+  Rendered confirms/delete_cow.js.erb (0.0ms)
+Completed 200 OK in 0.5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:35 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1.7ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:35 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1.6ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Started GET "/get_cow" for 127.0.0.1 at 2014-10-13 18:25:36 -0430
+Processing by ConfirmsController#get_cow as HTML
+  Rendered confirms/get_cow.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1.0ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:36 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1.8ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/confirms_page" for 127.0.0.1 at 2014-10-13 18:25:36 -0430
+Processing by ConfirmsController#index as HTML
+  Rendered confirms/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2.3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started DELETE "/delete_cow" for 127.0.0.1 at 2014-10-13 18:25:37 -0430
+Processing by ConfirmsController#delete_cow as HTML
+  Rendered confirms/delete_cow.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1.1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
