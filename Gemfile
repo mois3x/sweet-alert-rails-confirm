@@ -12,11 +12,24 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+
+rails_version = ENV["RAILS_VERSION"] || "default"
+
+rails = case rails_version
+        when "master"
+          {github: "rails/rails"}
+        when "default"
+          ">= 4.1.0"
+        else
+          "~> #{rails_version}"
+        end
+
+gem "rails", rails
+
 group :development, :test do
   gem "jquery-rails"
-  gem "sass-rails"
+  gem 'sass-rails'
   gem "sweet-alert"
-  #gem "sweet-alert-confirm"
   gem "capybara"
   gem "capybara-webkit"
   gem "poltergeist", git: 'https://github.com/teampoltergeist/poltergeist.git'
