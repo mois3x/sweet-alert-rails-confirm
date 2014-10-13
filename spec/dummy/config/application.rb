@@ -9,7 +9,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "sweet_alert_confirm"
+require "sweet-alert-confirm"
 
 module Dummy
   class Application < Rails::Application

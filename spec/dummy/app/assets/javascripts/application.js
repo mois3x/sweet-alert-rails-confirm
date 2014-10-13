@@ -10,4 +10,8 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
+//= require sweet-alert
+//= require sweet-alert-confirm
 //= require_tree .

@@ -12,3 +12,12 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+group :development, :test do
+  gem "jquery-rails"
+  gem "sass-rails"
+  gem "sweet-alert"
+  #gem "sweet-alert-confirm"
+  gem "capybara"
+  gem "capybara-webkit"
+  gem "poltergeist", git: 'https://github.com/teampoltergeist/poltergeist.git'
+end
