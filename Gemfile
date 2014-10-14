@@ -28,7 +28,11 @@ gem "rails", rails
 
 group :development, :test do
   gem "jquery-rails"
-  gem 'sass-rails'
+  if rails_version.to_f > 4.0
+    gem 'sass-rails', github: 'rails/sass-rails'
+  else
+    gem 'sass-rails'
+  end
   gem "sweet-alert"
   gem "capybara"
   gem "capybara-webkit"
