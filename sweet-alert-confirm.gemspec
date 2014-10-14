@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Moises Viloria"]
   s.email       = ["moisesviloria@gmail.com"]
   s.homepage    = "http://www.github.com/mois3x/sweet-alert-rails-confirm"
-  s.summary     = "TODO: Summary of SweetRailsConfirm."
-  s.description = "TODO: Description of SweetRailsConfirm."
+  s.summary     = "A Rails confirm replacement with SweetAlert"
+  s.description = ""
   s.license     = "MIT"
 
   #s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
