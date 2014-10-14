@@ -24,3 +24,4 @@ application.css:
  *= require sweet-alert
  */
 ```
+[![Build Status](https://travis-ci.org/mois3x/sweet-alert-rails-confirm.svg?branch=master)](http://travis-ci.org/mois3x/sweet-alert-rails-confirm)
