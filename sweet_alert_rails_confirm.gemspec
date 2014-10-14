@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "capybara", "~> 2.1"
   s.add_development_dependency "poltergeist"
   s.add_development_dependency "pry"
-  s.add_development_dependency "sqlite3"
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ['lib']
 end
