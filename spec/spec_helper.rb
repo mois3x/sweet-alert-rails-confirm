@@ -1,6 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
 dummy_app = ENV[ 'RAILS_VERSION' ].to_i <= 3 ? 'dummy-rails3' : 'dummy'
+dummy_app = 'dummy' if ENV[ 'RAILS_VERSION' ] == 'master'
 require File.expand_path("../#{dummy_app}/config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
