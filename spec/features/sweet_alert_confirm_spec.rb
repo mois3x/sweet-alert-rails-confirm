@@ -61,7 +61,21 @@ describe 'basic confirms', js: true, type: :feature do
     end
   end
 
-  it 'when click on a link with a confirm and have advanced options' do
+  describe 'Custom confirm' do
+    before do
+      visit confirms_page_path
+    end
+    it 'when click on a link with a confirm and have custom options' do
+      find_link("Custom confirm").trigger('click')
+      sleep 1
+      expect(page).to have_css('.confirm', text: 'Im ready')
+      expect(page).to have_css('.cancel', text: 'No way')
+      expect(page).to have_css('.icon.info')
+      expect(page).to have_css('h2', text: 'Are you ready?')
+      expect(page).to have_css('p', text: 'This is a subtitle')
+
+    end
   end
 
 end
+

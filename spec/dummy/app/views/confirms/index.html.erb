@@ -1,3 +1,11 @@
 <%= link_to 'Basic confirm', get_cow_path, id: 'basic-confirm', data: { text: 'nanana', confirm: 'Are you sure?' } %>
 <%= link_to 'Delete confirm', delete_cow_path,method: :delete, id: 'method-confirm', data: { text: 'nanana', confirm: 'Are you sure?' } %>
 <%= link_to 'Remote confirm', delete_cow_path,method: :delete, id: 'remote-confirm', data: { remote: 'true', text: 'nanana', confirm: 'Are you sure?' } %>
+<%= link_to 'Custom confirm', get_cow_path, id: 'custom-confirm', data: { 
+                                                                                                     :'confirm-button-text' => 'Im ready', 
+                                                                                                     :'cancel-button-text' => 'No way', 
+                                                                                                     :'confirm-button-color' => '#66CD00',
+                                                                                                     type: 'info',
+                                                                                                     text: 'This is a subtitle',
+                                                                                                     confirm: 'Are you ready?'
+                                                                                                    } %>
