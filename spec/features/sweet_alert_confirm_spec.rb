@@ -12,6 +12,14 @@ describe 'basic confirms', js: true, type: :feature do
       expect(page).not_to have_content('You got a pretty cow')
     end
 
+    it 'dont follow the link when click on cancel' do
+      sleep 1
+      expect(page).to_not have_content('You got a pretty cow')
+      click_button('Cancel')
+      sleep 1
+      expect(page).to_not have_content('You got a pretty cow')
+    end
+
     it 'goes to the link after accept confirm' do
       #click_on '.confirm'
       expect(page).to_not have_content('You got a pretty cow')
@@ -28,8 +36,17 @@ describe 'basic confirms', js: true, type: :feature do
     end
 
     it 'doesnt follow the link when click', :js => true do
+      sleep 1
       expect(page).to have_content('Are you sure?')
       expect(page).not_to have_content('You murdered a silly cow')
+    end
+    
+    it 'dont follow the link when click on cancel' do
+      sleep 1
+      expect(page).to_not have_content('You murdered a silly cow')
+      click_button('Cancel')
+      sleep 1
+      expect(page).to_not have_content('You murdered a silly cow')
     end
 
     it 'goes to the link after accept confirm' do
@@ -48,9 +65,20 @@ describe 'basic confirms', js: true, type: :feature do
     end
 
     it 'doesnt follow the link when click', :js => true do
+      sleep 1
       expect(page).to have_content('Are you sure?')
       expect(page).not_to have_content('You murdered a silly cow')
     end
+    
+    it 'doesnt follow the link when click on cancel' do
+      sleep 1
+      expect(page).to have_content('Are you sure?')
+      expect(page).not_to have_content('You murdered a silly cow')
+      click_button('Cancel')
+      sleep 1
+      expect(page).not_to have_content('You murdered a silly cow')
+    end
+
 
     it 'ajax change content in the page after accept confirm' do
       #click_on '.confirm'
