@@ -49,4 +49,11 @@ You can pass options in `data:`
 
 ![Custom confirm](https://cloud.githubusercontent.com/assets/5833678/4653700/14389916-54b0-11e4-9850-14ee970e9345.png)
 
+## Contribute
+
+Fork the repo & pull request you fix/feature
+
+append `RAILS_VERSION=4.1.2` or whichever you target before your `bundle` command ex: `RAILS_VERSION=4.1.2 bundle install`
+
+please add/modify test examples on fix or features
 
