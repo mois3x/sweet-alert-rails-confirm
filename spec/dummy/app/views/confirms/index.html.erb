@@ -9,3 +9,7 @@
                                                                                                      text: 'This is a subtitle',
                                                                                                      confirm: 'Are you ready?'
                                                                                                     } %>
+
+<%= form_tag(delete_cow_path, method: :delete) do %>
+  <%= submit_tag 'Submit to delete cow', id: 'submit-delete', data: {confirm: 'Are you sure?'} %>
+<% end %>

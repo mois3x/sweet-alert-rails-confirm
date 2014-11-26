@@ -105,5 +105,33 @@ describe 'basic confirms', js: true, type: :feature do
     end
   end
 
+  describe 'Submit confirm' do
+    before do
+      visit confirms_page_path
+      find("#submit-delete").trigger('click')
+    end
+    it 'show the alert when click the submit', :js => true do
+      sleep 1
+      expect(page).to have_content('Are you sure?')
+      expect(page).not_to have_content('You murdered a silly cow')
+    end
+
+    it 'does not submit the form when click on cancel' do
+      sleep 1
+      expect(page).to_not have_content('You murdered a silly cow')
+      click_button('Cancel')
+      sleep 1
+      expect(page).to_not have_content('You murdered a silly cow')
+    end
+
+    it 'submit the form after accept confirm' do
+      #click_on '.confirm'
+      expect(page).to_not have_content('You murdered a silly cow')
+      sleep 1
+      click_button('Ok')
+      expect(page).to have_content('You murdered a silly cow')
+    end
+  end
+
 end
 
