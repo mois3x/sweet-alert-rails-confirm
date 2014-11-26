@@ -40,7 +40,7 @@ You can pass options in `data:`
 	      :'confirm-button-text' => 'Im ready',
 	      :'cancel-button-text' => 'No way',
 	      :'confirm-button-color' => '#66CD00',
-	      type: 'info',
+	      :'sweet-alert-type' => 'info',
 	      text: 'This is a subtitle',
 	      :'image-url' => '/pic.png'
 
