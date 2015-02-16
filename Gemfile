@@ -35,7 +35,6 @@ group :development, :test do
   end
   gem "sweet-alert"
   gem "capybara"
-  gem "capybara-webkit"
   gem "poltergeist", git: 'https://github.com/teampoltergeist/poltergeist.git'
   gem "rake"
 end
