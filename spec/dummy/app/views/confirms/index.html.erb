@@ -13,3 +13,7 @@
 <%= form_tag(delete_cow_path, method: :delete) do %>
   <%= submit_tag 'Submit to delete cow', id: 'submit-delete', data: {confirm: 'Are you sure?'} %>
 <% end %>
+
+<%= form_tag(delete_cow_path, method: :delete) do %>
+  <%= button_tag('Button_tag confirm', id: 'button-confirm', data: { text: 'nanana', confirm: 'Are you sure?' }) %>
+<% end %>

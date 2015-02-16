@@ -1,32 +1,45 @@
 require 'spec_helper'
 
 describe 'basic confirms', js: true, type: :feature do
+
+  shared_examples 'Confirm shows correctly' do |is_cow_deleted, is_remote|
+    let(:got_cow) { 'You got a pretty cow' }
+    let(:deleted_cow) { 'You murdered a silly cow' }
+    let(:message) { is_cow_deleted ? deleted_cow : got_cow }
+
+    it 'doesnt follow the link when click' do
+    #  require 'pry'
+    #  binding.pry
+      expect(page).to have_content('Are you sure?')
+      expect(page).not_to have_content(message)
+    end
+
+    it 'dont follow the link when click on cancel' do
+      sleep 1
+      expect(page).to_not have_content(message)
+      click_button('Cancel')
+      sleep 1
+      expect(page).to_not have_content(message)
+    end
+
+    it 'goes to the link after accept confirm' do
+      #click_on '.confirm'
+      expect(page).to_not have_content(message)
+      sleep 1
+      click_button('Ok')
+      expect(page).to have_content(message)
+    end unless is_remote
+  end
+
+
+
   describe 'normal links' do
     before do
       visit confirms_page_path
       find_link("Basic confirm").trigger('click')
     end
 
-    it 'doesnt follow the link when click', :js => true do
-      expect(page).to have_content('Are you sure?')
-      expect(page).not_to have_content('You got a pretty cow')
-    end
-
-    it 'dont follow the link when click on cancel' do
-      sleep 1
-      expect(page).to_not have_content('You got a pretty cow')
-      click_button('Cancel')
-      sleep 1
-      expect(page).to_not have_content('You got a pretty cow')
-    end
-
-    it 'goes to the link after accept confirm' do
-      #click_on '.confirm'
-      expect(page).to_not have_content('You got a pretty cow')
-      sleep 1
-      click_button('Ok')
-      expect(page).to have_content('You got a pretty cow')
-    end
+   it_behaves_like 'Confirm shows correctly'
   end
 
   describe 'methods links' do
@@ -35,27 +48,7 @@ describe 'basic confirms', js: true, type: :feature do
       find_link("Delete confirm").trigger('click')
     end
 
-    it 'doesnt follow the link when click', :js => true do
-      sleep 1
-      expect(page).to have_content('Are you sure?')
-      expect(page).not_to have_content('You murdered a silly cow')
-    end
-    
-    it 'dont follow the link when click on cancel' do
-      sleep 1
-      expect(page).to_not have_content('You murdered a silly cow')
-      click_button('Cancel')
-      sleep 1
-      expect(page).to_not have_content('You murdered a silly cow')
-    end
-
-    it 'goes to the link after accept confirm' do
-      #click_on '.confirm'
-      expect(page).to_not have_content('You murdered a silly cow')
-      sleep 1
-      click_button('Ok')
-      expect(page).to have_content('You murdered a silly cow')
-    end
+   it_behaves_like 'Confirm shows correctly', true
   end
 
   describe 'remote links' do
@@ -64,20 +57,7 @@ describe 'basic confirms', js: true, type: :feature do
       find_link("Remote confirm").trigger('click')
     end
 
-    it 'doesnt follow the link when click', :js => true do
-      sleep 1
-      expect(page).to have_content('Are you sure?')
-      expect(page).not_to have_content('You murdered a silly cow')
-    end
-    
-    it 'doesnt follow the link when click on cancel' do
-      sleep 1
-      expect(page).to have_content('Are you sure?')
-      expect(page).not_to have_content('You murdered a silly cow')
-      click_button('Cancel')
-      sleep 1
-      expect(page).not_to have_content('You murdered a silly cow')
-    end
+    it_behaves_like 'Confirm shows correctly', true, true
 
 
     it 'ajax change content in the page after accept confirm' do
@@ -110,28 +90,18 @@ describe 'basic confirms', js: true, type: :feature do
       visit confirms_page_path
       find("#submit-delete").trigger('click')
     end
-    it 'show the alert when click the submit', :js => true do
-      sleep 1
-      expect(page).to have_content('Are you sure?')
-      expect(page).not_to have_content('You murdered a silly cow')
-    end
-
-    it 'does not submit the form when click on cancel' do
-      sleep 1
-      expect(page).to_not have_content('You murdered a silly cow')
-      click_button('Cancel')
-      sleep 1
-      expect(page).to_not have_content('You murdered a silly cow')
-    end
-
-    it 'submit the form after accept confirm' do
-      #click_on '.confirm'
-      expect(page).to_not have_content('You murdered a silly cow')
-      sleep 1
-      click_button('Ok')
-      expect(page).to have_content('You murdered a silly cow')
-    end
+    it_behaves_like 'Confirm shows correctly', true
   end
+
+  describe 'button_tag links' do
+    before do
+      visit confirms_page_path
+      find_button("Button_tag confirm").trigger('click')
+    end
+
+    it_behaves_like 'Confirm shows correctly', true
+  end
+
 
 end
 
