@@ -10,7 +10,7 @@ module SweetAlertConfirm
       super *args, &block
     end
 
-    def submit_tag(value = "Save changes", options = {})
+    def submit_tag(value = 'Save changes', options = {})
       options['data-sweet-alert-confirm'] = options.delete(:confirm) || options[:data].delete(:confirm) if options_has_confirm?(options)
       super value, options
     end
@@ -23,7 +23,7 @@ module SweetAlertConfirm
                   html_options[:data].delete(:confirm)
     end
     super *args, &block
-  end 
+  end
 
     protected
     def options_has_confirm?(options)
