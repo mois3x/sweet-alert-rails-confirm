@@ -53,6 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  root 'confirms#pre_index'
   get :confirms_page, to: 'confirms#index'
   get :get_cow,    to: 'confirms#get_cow'
   delete :delete_cow,    to: 'confirms#delete_cow'

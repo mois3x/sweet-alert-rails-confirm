@@ -1,6 +1,16 @@
 require 'spec_helper'
 
 describe 'basic confirms', js: true, type: :feature do
+  before do
+    if ENV['USE_TURBOLINKS']
+      visit root_path
+      page.execute_script('Turbolinks.visit("/confirms_page");') 
+      #find_link('Index').trigger('click')
+    else
+      visit root_path
+      click_link 'Index'
+    end
+  end
 
   shared_examples 'Confirm shows correctly' do |is_cow_deleted, is_remote|
     let(:got_cow) { 'You got a pretty cow' }
@@ -8,13 +18,11 @@ describe 'basic confirms', js: true, type: :feature do
     let(:message) { is_cow_deleted ? deleted_cow : got_cow }
 
     it 'doesnt follow the link when click' do
-    #  require 'pry'
-    #  binding.pry
       expect(page).to have_content('Are you sure?')
       expect(page).not_to have_content(message)
     end
 
-    it 'dont follow the link when click on cancel' do
+    it 'doesnt follow the link when click on cancel' do
       sleep 1
       expect(page).to_not have_content(message)
       click_button('Cancel')
@@ -35,7 +43,7 @@ describe 'basic confirms', js: true, type: :feature do
 
   describe 'normal links' do
     before do
-      visit confirms_page_path
+      #visit confirms_page_path
       find_link("Basic confirm").trigger('click')
     end
 
@@ -44,8 +52,8 @@ describe 'basic confirms', js: true, type: :feature do
 
   describe 'methods links' do
     before do
-      visit confirms_page_path
       find_link("Delete confirm").trigger('click')
+      sleep 2
     end
 
    it_behaves_like 'Confirm shows correctly', true
@@ -53,8 +61,8 @@ describe 'basic confirms', js: true, type: :feature do
 
   describe 'remote links' do
     before do
-      visit confirms_page_path
       find_link("Remote confirm").trigger('click')
+      sleep 3
     end
 
     it_behaves_like 'Confirm shows correctly', true, true
@@ -62,8 +70,9 @@ describe 'basic confirms', js: true, type: :feature do
 
     it 'ajax change content in the page after accept confirm' do
       #click_on '.confirm'
+      sleep 3
       expect(page).to_not have_content('You murdered a silly cow with ajax')
-      sleep 1
+      sleep 3
       click_button('Ok')
       expect(page).to have_content('You murdered a silly cow with ajax')
     end
@@ -87,7 +96,7 @@ describe 'basic confirms', js: true, type: :feature do
 
   describe 'Submit confirm' do
     before do
-      visit confirms_page_path
+      #visit confirms_page_path
       find("#submit-delete").trigger('click')
     end
     it_behaves_like 'Confirm shows correctly', true
@@ -95,7 +104,7 @@ describe 'basic confirms', js: true, type: :feature do
 
   describe 'button_tag links' do
     before do
-      visit confirms_page_path
+      #visit confirms_page_path
       find_button("Button_tag confirm").trigger('click')
     end
 
