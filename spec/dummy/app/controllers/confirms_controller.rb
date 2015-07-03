@@ -6,4 +6,8 @@ class ConfirmsController < ApplicationController
       format.js {}
     end
   end
+
+  def pre_index
+    
+  end
 end

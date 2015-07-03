@@ -25,6 +25,7 @@ rails = case rails_version
         end
 
 gem "rails", rails
+gem "turbolinks"
 
 group :development, :test do
   gem "jquery-rails"
@@ -35,6 +36,6 @@ group :development, :test do
   end
   gem "sweet-alert"
   gem "capybara"
-  gem "poltergeist", git: 'https://github.com/teampoltergeist/poltergeist.git'
+  gem "poltergeist" #, git: 'https://github.com/teampoltergeist/poltergeist.git'
   gem "rake"
 end
