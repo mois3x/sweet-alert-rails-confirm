@@ -9,10 +9,10 @@ A Rails confirm replacement with SweetAlert
 depends on https://github.com/t4t5/sweetalert
 
 So you need to Install:
-    gem 'sweet-alert-confirm'
+    gem 'sweet-alert'
 
-Or
-    gem 'rails-assets-sweetalert' # Using https://rails-assets.org/
+Or the latest with:
+    gem 'rails-assets-sweetalert' # Using https://rails-assets.org/ 
 
 ## Requirements
 Rails >= 3.1
@@ -35,7 +35,7 @@ application.css:
  */
 ```
 
-Using ```gem 'sweet-alert-confirm'```
+Using ```gem 'sweet-alert'```
 
 application.js:
 
@@ -47,7 +47,7 @@ application.css:
 
 ```css
 /*
- *= require swee-talert
+ *= require sweet-alert
  */
 ```
 
