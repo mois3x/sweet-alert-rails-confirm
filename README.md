@@ -43,7 +43,7 @@ You can pass options in `data:`
 	      :'sweet-alert-type' => 'info',
 	      text: 'This is a subtitle',
 	      :'image-url' => '/pic.png'
-
+        html: false
         } 
 ```
 
