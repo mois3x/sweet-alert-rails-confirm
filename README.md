@@ -69,6 +69,18 @@ You can pass options in `data:`
 
 ![Custom confirm](https://cloud.githubusercontent.com/assets/5833678/4653700/14389916-54b0-11e4-9850-14ee970e9345.png)
 
+Can you set default options that will be used for the hole application so it is not nessecary to set the option on each link. Put this object inside your app to override default options.
+
+```Javascript
+var sweetAlertConfirmConfig = {
+  title: 'Are you sure?',
+  type: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: null,
+  confirmButtonText: "Ok"
+};
+```
+
 ## Contribute
 
 Fork the repo & pull request you fix/feature
