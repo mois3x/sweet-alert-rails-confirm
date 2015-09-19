@@ -29,13 +29,9 @@ gem "turbolinks"
 
 group :development, :test do
   gem "jquery-rails"
-  if rails_version.to_f >= 4.0 || rails_version == 'master'
-    gem 'sass-rails', github: 'rails/sass-rails'
-  else
-    gem 'sass-rails'
-  end
+  gem 'sass-rails'
   gem "sweet-alert"
   gem "capybara"
-  gem "poltergeist" #, git: 'https://github.com/teampoltergeist/poltergeist.git'
+  gem "poltergeist", git: 'https://github.com/teampoltergeist/poltergeist.git'
   gem "rake"
 end
