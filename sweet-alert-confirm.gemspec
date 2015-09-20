@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rails", ">=3.1"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "capybara", "~> 2.1"
-  s.add_development_dependency "poltergeist"
   s.add_development_dependency "pry"
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ['lib']
