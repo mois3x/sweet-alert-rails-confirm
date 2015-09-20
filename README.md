@@ -76,8 +76,8 @@ var sweetAlertConfirmConfig = {
   title: 'Are you sure?',
   type: 'warning',
   showCancelButton: true,
-  confirmButtonColor: null,
-  confirmButtonText: "Ok"
+  confirmButtonColor: '#DD6B55',
+  confirmButtonText: 'Ok'
 };
 ```
 
