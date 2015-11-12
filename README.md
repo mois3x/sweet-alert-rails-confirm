@@ -81,6 +81,12 @@ var sweetAlertConfirmConfig = {
 };
 ```
 
+### Before Callback
+
+A callback that will be runned before alert is shown. Returning `false` will display the alert and `true` will _not_ display it.
+
+`data-saBeforeFunction='myFunction'`
+
 ## Contribute
 
 Fork the repo & pull request you fix/feature
