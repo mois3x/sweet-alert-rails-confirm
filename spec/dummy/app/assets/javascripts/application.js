@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require sweet-alert
+//= require sweetalert
 //= require sweet-alert-confirm
 // require_tree .

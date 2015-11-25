@@ -27,6 +27,10 @@ rails = case rails_version
 gem "rails", rails
 gem "turbolinks"
 
+source 'https://rails-assets.org' do
+    gem 'rails-assets-sweetalert'
+end
+
 group :development, :test do
   gem "jquery-rails"
   gem 'sass-rails'
