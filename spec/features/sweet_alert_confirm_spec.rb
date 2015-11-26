@@ -87,7 +87,7 @@ describe 'basic confirms', js: true, type: :feature do
       sleep 1
       expect(page).to have_css('.confirm', text: 'Im ready')
       expect(page).to have_css('.cancel', text: 'No way')
-      expect(page).to have_css('.icon.info')
+      expect(page).to have_css('.sa-info', visible: true)
       expect(page).to have_css('h2', text: 'Are you ready?')
       expect(page).to have_css('p', text: 'This is a subtitle')
 
