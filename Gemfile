@@ -33,9 +33,10 @@ end
 
 group :development, :test do
   gem "jquery-rails"
+  gem "test-unit"
   gem 'sass-rails'
   gem "sweet-alert"
   gem "capybara"
-  gem "poltergeist", git: 'https://github.com/teampoltergeist/poltergeist.git'
+  gem "poltergeist"
   gem "rake"
 end
