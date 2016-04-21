@@ -28,14 +28,14 @@ gem 'sweet-alert-confirm'
 Add the following to application.js:
 
 ```javascript
-//= require sweetalert
+//= require sweet-alert
 //= require sweet-alert-confirm
 ```
 Add the following to application.css:
 
 ```css
 /*
- *= require sweetalert
+ *= require sweet-alert
  */
 ```
 
