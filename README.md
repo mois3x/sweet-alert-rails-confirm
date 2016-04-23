@@ -19,35 +19,23 @@ Rails >= 3.1
 
 ## Usage
 
-Using ```gem 'rails-assets-sweetalert'```
+Add it to your Gemfile:
+```ruby
+gem 'sweet-alert'
+gem 'sweet-alert-confirm'
+```
 
-application.js:
+Add the following to application.js:
 
 ```javascript
 //= require sweetalert
 //= require sweet-alert-confirm
 ```
-application.css:
+Add the following to application.css:
 
 ```css
 /*
  *= require sweetalert
- */
-```
-
-Using ```gem 'sweet-alert'```
-
-application.js:
-
-```javascript
-//= require sweet-alert
-//= require sweet-alert-confirm
-```
-application.css:
-
-```css
-/*
- *= require sweet-alert
  */
 ```
 
