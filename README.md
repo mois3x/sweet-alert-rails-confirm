@@ -45,7 +45,7 @@ Add the following to application.css:
 You can pass options in `data:`
 ```Ruby
  data: {
-  confirm: 'Are you ready?'
+  :'sweet-alert-confirm: 'Are you ready?'
   :'confirm-button-text' => 'Im ready',
   :'cancel-button-text' => 'No way',
   :'confirm-button-color' => '#66CD00',
